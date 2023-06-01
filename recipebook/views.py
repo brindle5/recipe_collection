@@ -5,4 +5,10 @@ from django.views import generic, View
 
 
 def display_recipe(request):
-    return render(request, 'recipe.html')
+
+    recipe = Recipe.objects.all().values
+
+    context = {
+        'recipe': recipe
+    }
+    return render(request, context, 'recipe.html')

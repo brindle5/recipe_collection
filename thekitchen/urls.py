@@ -20,5 +20,5 @@ from recipebook import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('recipe/', views.display_recipe, name="recipe"),
+    path('', views.display_recipe, name="recipe"),
 ]
