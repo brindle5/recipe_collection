@@ -15,10 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from recipebook import views
-
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.display_recipe, name="recipe"),
+    path('admin/', admin.site.urls)
 ]
