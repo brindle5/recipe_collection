@@ -4,11 +4,11 @@ from django.http import HttpResponse
 from django.views import generic, View
 
 
-# def display_recipe(request):
+def display_recipe(request):
 
-#     return render(request, 'recipe.html')
+    return render(request, 'recipe.html')
 
-class RecipeCollection(generic.ListView):
-    queryset = Recipe.objects.values_list('title')
-    template_name = 'recipe.html'
-    paginate_by = 9
+# class RecipeCollection(generic.ListView):
+#     queryset = Recipe.objects.values_list('title')
+#     template_name = 'recipe.html'
+#     paginate_by = 9
