@@ -8,8 +8,19 @@ from django.views import generic, View
 
 #     return render(request, 'recipe.html')
 
-class RecipeCollection(View):
+class RecipeCollection(generic.ListView):
+    template_name = 'recipe.html'
+    model = Recipe
 
-    def get(self, request)
-    queryset = Recipe.objects
-    return render(request, "recipe.html")
+
+# class RecipeCollection(View):
+#     def get(self, request, *args, **kwargs):
+#         queryset = Recipe.objects.all()
+#         context = {"recipes": queryset}
+#         return render(request, 'recipe.html', context)
+
+
+# def recipe_collection(request):
+#     recipes = Recipe.objects.all()
+#     context = {"recipes": recipes}
+#     return render(request, 'recipe.html', context)

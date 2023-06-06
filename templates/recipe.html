@@ -4,4 +4,20 @@
 
 <h1>This is where the recipe goes</h1>
 
+{% for item in object_list %}
+
+{{ item.title}} by {{ item.author }}
+{{ item.created_on }}
+{{ item.description }}
+{{ item.ingredients }}
+{{ item.instructions }}
+
+{{ item.image }}
+
+{{ item.cuisine }}
+
+{{ item.meal }}
+
+{% endfor %}
+
 {% endblock content %}

@@ -23,6 +23,7 @@ class Recipe(models.Model):
     """ A model for users to add their own recipes """
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=100, null=False, blank=False)
+    created_on = models.DateTimeField(auto_now_add=True)
     description = models.TextField(null=True, blank=True)
     ingredients = models.TextField(null=False, blank=False)
     instructions = models.TextField(null=False, blank=False)
