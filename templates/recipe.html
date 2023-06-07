@@ -2,7 +2,6 @@
 
 {% block content %}
 
-<h1>This is where the recipe goes</h1>
 
 {% for item in object_list %}
 
@@ -11,13 +10,12 @@
 {{ item.description }}
 {{ item.ingredients }}
 {{ item.instructions }}
-
 {{ item.image }}
-
 {{ item.cuisine }}
-
 {{ item.meal }}
 
 {% endfor %}
+
+<a href="/add">Add new recipe</a>
 
 {% endblock content %}

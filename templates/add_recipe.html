@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+Add recipe:
+
+<form method="POST" action="add">
+    <p>
+        <label for="recipe_id">Title of dish</label>
+        <input type="text" id="recipe_id" name="recipe_title">
+    </p>
+    <p>
+        <label for="recipe_description">Description of dish:</label>
+        <input type="text" id="recipe_description" name="recipe_description">
+    </p>
+    <p>
+        <label for="recipe_ingredients">Ingredients:</label>
+        <input type="text" id="recipe_ingredients" name="recipe_ingredients">
+    </p>
+    <p>
+        <label for="recipe_instructions">Instructions:</label>
+        <input type="text" id="recipe_instructions" name="recipe_instructions">
+    </p>
+
+
+    <button type="submit">Add recipe to recipe book</button>
+</form>
+
+
+Image
+Cuisine
+Meal
+
+
+<!-- {% for item in object_list %}
+
+{{ item.title}} by {{ item.author }}
+{{ item.created_on }}
+{{ item.description }}
+{{ item.ingredients }}
+{{ item.instructions }}
+{{ item.image }}
+{{ item.cuisine }}
+{{ item.meal }} -->
+
+{% endfor %}
+
+{% endblock content %}
