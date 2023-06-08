@@ -8,60 +8,9 @@ Add recipe:
     {% csrf_token %}
 
     {{ form.as_p }}
-    <!-- <p>
-        <label for="author_id">Author</label>
-        <input type="text" id="author_id" name="recipe_author">
-    </p> -->
-    <!-- <p>
-        <label for="recipe_id">Title of dish</label>
-        <input type="text" id="recipe_id" name="recipe_title">
-    </p>
-    <p>
-        <label for="recipe_description">Description of dish:</label>
-        <input type="text" id="recipe_description" name="recipe_description">
-    </p>
-    <p>
-        <label for="recipe_ingredients">Ingredients:</label>
-        <input type="text" id="recipe_ingredients" name="recipe_ingredients">
-    </p>
-    <p>
-        <label for="recipe_instructions">Instructions:</label>
-        <input type="text" id="recipe_instructions" name="recipe_instructions">
-    </p>
-    <p>
-        <label for="recipe_image">Upload an image</label>
-        <input type="file" id="recipe_image" name="recipe_image">
-    </p>
-    <p>
-        <label for="cuisine">Cuisine:</label>
-        <select id="cuisine" name="cuisine">
-            <option value="american">American</option>
-            <option value="portuguese">Portuguese</option>
-            <option value="spanish">Spanish</option>
-            <option value="thai">Thai</option>
-            <option value="indian">Indian</option>
-            <option value="british">British</option>
-            <option value="italian">Italian</option>
-        </select>
-    </p>
-    <p>
-        <label for="meal">Meal:</label>
-        <select id="meal" name="meal">
-            <option value="sides">Sides</option>
-            <option value="dessert">Dessert</option>
-            <option value="drinks">Drinks</option>
-            <option value="snacks">Snacks</option>
-            <option value="dinner">Dinner</option>
-            <option value="lunch">Lunch</option>
-            <option value="breakfast">Breakfast</option>
-        </select>
-    </p> -->
-
 
     <button type="submit">Add recipe to recipe book</button>
 </form>
 
-
-{% endfor %}
 
 {% endblock content %}

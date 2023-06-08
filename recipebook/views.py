@@ -1,13 +1,28 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Cuisine, Meal, Recipe
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.views import generic, View
 from .forms import RecipeForm
+from django.urls import reverse
 
 
 class RecipeCollection(generic.ListView):
     template_name = 'recipe.html'
     model = Recipe
+
+
+def add_recipe(request):
+    if request.method == "POST":
+        form = RecipeForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(RecipeCollection)
+    form = RecipeForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'add_recipe.html', context)
+
 
 # class RecipeCollection(View):
 #     def get(self, request, *args, **kwargs):
@@ -19,17 +34,3 @@ class RecipeCollection(generic.ListView):
 #     recipes = Recipe.objects.all()
 #     context = {"recipes": recipes}
 #     return render(request, 'recipe.html', context)
-
-
-def add_recipe(request):
-    if request.method == "POST":
-        form = RecipeForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect(RecipeCollection)
-        form = RecipeForm()
-        context = {
-            'form': form
-        }
-
-    return render(request, 'add_recipe.html', context)
