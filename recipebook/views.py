@@ -7,7 +7,7 @@ from django.urls import reverse
 
 
 class RecipeCollection(generic.ListView):
-    template_name = 'recipe.html'
+    template_name = 'index.html'
     model = Recipe
 
     # class RecipeCollection(View):
@@ -35,5 +35,11 @@ def add_recipe(request):
     return render(request, 'add_recipe.html', context)
 
 
-# def edit_item(request, recipe_id):
-#     return render(request, 'edit_recipe.html')
+def edit_recipe(request, recipe_id):
+    return render(request, 'edit_recipe.html')
+
+
+def delete_recipe(request, recipe_id):
+    recipe = recipe_id
+    recipe.delete()
+    return redirect(RecipeCollection)
