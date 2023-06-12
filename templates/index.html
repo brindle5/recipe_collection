@@ -2,45 +2,63 @@
 
 {% block content %}
 
-<div>
-    {% for item in object_list %}
-    <br>
-    {{ item.title}} by {{ item.author }}
-    <br>
-    {{ item.created_on }}
-    <br>
-    {{ item.description }}
-    <br>
-    {{ item.ingredients }}
-    <br>
-    {{ item.instructions }}
-    <br>
-    {{ item.image }}
-    <br>
-    {{ item.cuisine }}
-    <br>
-    {{ item.meal }}
-    <br>
-    {% if user.is_authenticated %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            {% for item in object_list %}
+            <br>
+            {{ item.title}} by {{ item.author }}
+            <br>
+            Posted on: {{ item.created_on }}
+            <br>
+            <div>{{ item.image }}</div>
+            <em>{{ item.description }}</em>
+            <br>
+            <strong>Ingredients:</strong> {{ item.ingredients }}
+            <br>
+            <strong>Instructions:</strong> {{ item.instructions }}
 
-    <a href="/edit/{{ recipe.id }}">
-        <button>Edit Recipe</button>
-    </a>
-    <br>
-    <a href="/delete/{{ recipe.id }}">
-        <button>Delete Recipe</button>
-    </a>
+            <br>
+            {{ item.cuisine }}
+            <br>
+            {{ item.meal }}
+            <br>
+            {% if user.is_authenticated %}
+
+            <a href="/edit/{{ recipe.id }}">
+                <button type="button" class="btn btn-warning">Edit Recipe</button>
+            </a>
+            <br>
+            <a href="/delete/{{ recipe.id }}">
+                <button type="button" class="btn btn-danger">Delete Recipe</button>
+            </a>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+    </div>
 
     {% endif %}
 
     {% endfor %}
 
-    <br>
+</div>
+
+<div class="row">
 
     {% if user.is_authenticated %}
 
     <a href="/add">
-        <button>Add new recipe</button>
+        <button type="button" class="btn btn-success">Add new recipe</button>
     </a>
     {% endif %}
 </div>

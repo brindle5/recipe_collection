@@ -9,6 +9,7 @@ from django.urls import reverse
 class RecipeCollection(generic.ListView):
     template_name = 'index.html'
     model = Recipe
+    paginate_by = 9
 
     # class RecipeCollection(View):
     #     def get(self, request, *args, **kwargs):

@@ -4,19 +4,18 @@
 
 <!-- Code for edit recipe taken from Code Instittue ToDo App project -->
 
-<body>
-    <h1>Edit Recipe</h1>
 
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <div>
-            <p>
-                <button type="submit">Finished</button>
-            </p>
-        </div>
-    </form>
-</body>
+<h1>Edit Recipe</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div>
+        <p>
+            <button type="submit" class="btn btn-success">Finished</button>
+        </p>
+    </div>
+</form>
 
 
 {% endblock content %}
