@@ -3,66 +3,49 @@
 {% block content %}
 
 <div class="container">
+
+    <!-- authenticated users can add new recipes -->
+    {% if user.is_authenticated %}
     <div class="row">
-        <div class="col-md-4">
-            {% for item in object_list %}
-            <br>
-            {{ item.title}} by {{ item.author }}
-            <br>
-            Posted on: {{ item.created_on }}
-            <br>
-            <div>{{ item.image }}</div>
-            <em>{{ item.description }}</em>
-            <br>
-            <strong>Ingredients:</strong> {{ item.ingredients }}
-            <br>
-            <strong>Instructions:</strong> {{ item.instructions }}
-
-            <br>
-            {{ item.cuisine }}
-            <br>
-            {{ item.meal }}
-            <br>
-            {% if user.is_authenticated %}
-
-            <a href="/edit/{{ recipe.id }}">
-                <button type="button" class="btn btn-warning">Edit Recipe</button>
-            </a>
-            <br>
-            <a href="/delete/{{ recipe.id }}">
-                <button type="button" class="btn btn-danger">Delete Recipe</button>
+        <div class="col-12" class="btn btn-success">
+            <a href="/add">
+                Add new recipe
             </a>
         </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
     </div>
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-    </div>
-
     {% endif %}
 
-    {% endfor %}
-
+    <!-- loop through each recipe -->
+    <div class="row">
+        {% for recipe in object_list %}
+        <div class="col-12 col-md-6 col-lg-4">
+            <br>
+            {{ recipe.title }} by {{ recipe.author }}
+            <br>
+            Posted on: {{ recipe.created_on }}
+            <br>
+            <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="img-fluid">
+            <em>{{ recipe.description }}</em>
+            <br>
+            <strong>Ingredients:</strong> {{ recipe.ingredients }}
+            <br>
+            <strong>Instructions:</strong> {{ recipe.instructions }}
+            <br>
+            {{ recipe.cuisine }}
+            <br>
+            {{ recipe.meal }}
+            <br>
+            {% if request.user == recipe.author %}
+            <a href="{% url 'edit' recipe.id %}" class="btn btn-warning">
+                Edit Recipe
+            </a>
+            <br>
+            <a href="{% url 'delete' recipe.id %}" class="btn btn-danger">
+                Delete Recipe
+            </a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
 </div>
-
-<div class="row">
-
-    {% if user.is_authenticated %}
-
-    <a href="/add">
-        <button type="button" class="btn btn-success">Add new recipe</button>
-    </a>
-    {% endif %}
-</div>
-
-
-
 {% endblock content %}
