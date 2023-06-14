@@ -50,6 +50,6 @@ def edit_recipe(request, recipe_id):
 
 
 def delete_recipe(request, recipe_id):
-    recipe = recipe_id
-    recipe.delete(recipe)
+    recipe = get_object_or_404(Recipe, id=recipe_id)
+    recipe.delete()
     return redirect("recipe")
