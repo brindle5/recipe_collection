@@ -28,7 +28,7 @@ def add_recipe(request):
         form = RecipeForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect(RecipeCollection)
+            return redirect("recipe")
     form = RecipeForm()
     context = {
         'form': form
@@ -42,5 +42,5 @@ def edit_recipe(request, recipe_id):
 
 def delete_recipe(request, recipe_id):
     recipe = recipe_id
-    recipe.delete()
-    return redirect(RecipeCollection)
+    recipe.delete(recipe)
+    return redirect("recipe")
