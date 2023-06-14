@@ -14,7 +14,6 @@ class RecipeForm(forms.ModelForm):
             'description',
             'ingredients',
             'instructions',
-            'image',
             'cuisine',
             'meal'
         ]

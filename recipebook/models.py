@@ -27,8 +27,6 @@ class Recipe(models.Model):
     description = models.TextField(null=True, blank=True)
     ingredients = models.TextField(null=False, blank=False)
     instructions = models.TextField(null=False, blank=False)
-    image = CloudinaryField(
-        "image", default="placeholder", null=False, blank=False)
     cuisine = models.ForeignKey(
         Cuisine, on_delete=models.SET_NULL, null=True, blank=True)
     meal = models.ForeignKey(
