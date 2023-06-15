@@ -4,6 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.views import generic, View
 from .forms import RecipeForm
 from django.urls import reverse
+from django.contrib import messages
 
 
 class RecipeCollection(generic.ListView):
@@ -24,6 +25,8 @@ def add_recipe(request):
         'form': form
     }
     return render(request, 'add_recipe.html', context)
+    messages.success(request, 'Recipe has been added to recipebook')
+    messages.error(request, 'There was a problem. Try again later.')
 
 
 def edit_recipe(request, recipe_id):
@@ -32,7 +35,9 @@ def edit_recipe(request, recipe_id):
         form = RecipeForm(request.POST, instance=recipe)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Recipe updated')
             return redirect("recipe")
+            messages.error(request, 'There was a problem. Try again later.')
     form = RecipeForm(instance=recipe)
     context = {
         'form': form
@@ -43,4 +48,6 @@ def edit_recipe(request, recipe_id):
 def delete_recipe(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
     recipe.delete()
+    messages.success(request, 'Recipe deleted')
     return redirect("recipe")
+    messages.error(request, 'Recipe not deleted. Try again later.')

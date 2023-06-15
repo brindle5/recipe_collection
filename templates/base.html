@@ -50,7 +50,7 @@
                 {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
                     {{ message | safe }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">X</button>
                 </div>
                 {% endfor %}
             </div>
@@ -64,28 +64,17 @@
 
     {% endblock content %}
 
-    <!-- Code for social media links taken from Code Institute Love Running Project -->
+    <!-- Footer section -->
 
-    <div class="container">
+    <!-- <div class="container">
         <footer>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="https://facebook.com" target="_blank" rel="noopener"
-                        aria-label="Connect with us on facebook (opens in a new tab)"><i
-                            class="fa-brands fa-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="https://twitter.com" target="_blank" rel="noopener"
-                        aria-label="Connect with us on twitter (opens in a new tab)"><i
-                            class="fa-brands fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="https://instagram.com" target="_blank" rel="noopener"
-                        aria-label="Connect with us on instagram (opens in a new tab)"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-
+            <div class="row-copyright">
+                <p><i class="fa-regular fa-copyright"></i> The Kitchen 2023</p>
+            </div>
         </footer>
-    </div>
+    </div> -->
 
     <script src="https://kit.fontawesome.com/88b5170f86.js" crossorigin="anonymous"></script>
-
-
     <script>
         setTimeout(function () {
             let messages = document.getElementById('msg');

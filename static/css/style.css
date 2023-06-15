@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
 
+/* Code for margin, padding and border originally from Code Institute
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+} */
+
+
+html,
+body {
+    height: 100%;
+}
 
 body {
     background-color: cream;
