@@ -19,14 +19,14 @@ def add_recipe(request):
         form = RecipeForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Recipe has been added to recipebook')
             return redirect("recipe")
+            messages.error(request, 'There was a problem. Try again later.')
     form = RecipeForm()
     context = {
         'form': form
     }
     return render(request, 'add_recipe.html', context)
-    messages.success(request, 'Recipe has been added to recipebook')
-    messages.error(request, 'There was a problem. Try again later.')
 
 
 def edit_recipe(request, recipe_id):
@@ -35,7 +35,7 @@ def edit_recipe(request, recipe_id):
         form = RecipeForm(request.POST, instance=recipe)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Recipe updated')
+            messages.success(request, 'Your recipe has been updated')
             return redirect("recipe")
             messages.error(request, 'There was a problem. Try again later.')
     form = RecipeForm(instance=recipe)
