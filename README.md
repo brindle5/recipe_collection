@@ -197,4 +197,12 @@ You can fork this repository by using the following steps:
 
 ## Credits
 
-### 
+### Content
+
+### Media
+
+### Acknowledgements 
+
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his invaluable support and guidance.
+- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
+- I’d like to thank my family and friends for supporting me through the challenges of this project.
