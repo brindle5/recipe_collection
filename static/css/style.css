@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+
 body {
     background-color: cream;
     color: navy;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Verdana', sans-serif;
+}
+
+#heading {
+    font-weight: 800;
+    font-size: 5rem;
 }
