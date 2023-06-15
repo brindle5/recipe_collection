@@ -15,8 +15,8 @@ body {
 }
 
 body {
-    background-color: cream;
-    color: navy;
+    background-color: #FDFFFC;
+    color: #546A7B;
     font-weight: 400;
     font-family: 'Open Sans', 'Verdana', sans-serif;
 }
@@ -24,4 +24,8 @@ body {
 #heading {
     font-weight: 800;
     font-size: 5rem;
+}
+
+.highlight {
+    color: #C1292E;
 }

@@ -20,19 +20,20 @@
         {% for recipe in object_list %}
         <div class="col-12 col-md-6 col-lg-4">
             <br>
-            {{ recipe.title }} by {{ recipe.author }}
+            <strong class="highlight">{{ recipe.title }}</strong> by {{ recipe.author }}
             <br>
-            Posted on: {{ recipe.created_on }}
+            <br>
+            {{ recipe.cuisine }} {{ recipe.meal }}
             <br>
             <em>{{ recipe.description }}</em>
+            <br>
             <br>
             <strong>Ingredients:</strong> {{ recipe.ingredients }}
             <br>
             <strong>Instructions:</strong> {{ recipe.instructions }}
             <br>
-            {{ recipe.cuisine }}
             <br>
-            {{ recipe.meal }}
+            Posted on: {{ recipe.created_on }}
             <br>
             {% if request.user == recipe.author %}
             <a href="{% url 'edit' recipe.id %}" class="btn btn-warning">
