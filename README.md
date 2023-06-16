@@ -26,6 +26,24 @@ As a site administrator, I can manage recipes so that the site is well organised
 
 ### Existing features
 
+- **The Kitchen homepage**
+On this page, the user can see all the recipes stored in their online recipe book. These can be recipes belonging to the user, or those of other users. From this page, users can select from different options, including adding a new recipe, editing an existing recipe or deleting it entirely.
+
+![Homepage screenshot](documentation/homepage_screenshot.png)
+
+- **Add new recipe**
+Users can add new recipes by completing the form with details of the dish. They can also select type of food, and meal it’s served for.
+
+![Add recipe screenshot 1](documentation/add_recipe_screenshot_1.png)
+![Add recipe screenshot 2](documentation/add_recipe_screenshot_2.png)
+
+- **Edit recipe **
+The user can edit an existing recipe on this page. The relevant form fields are prepopulated with the recipe data so the user can change one or two small details without having to rewrite their recipe from scratch.
+
+![Edit recipe screenshot 1](documentation/edit_recipe_screenshot_1.png)
+![Edit recipe screenshot 2](documentation/edit_recipe_screenshot_2.png)
+
+
 ### Future features
 
 ## Tools and technologies used
@@ -201,7 +219,7 @@ You can fork this repository by using the following steps:
 
 ### Media
 
-### Acknowledgements 
+### Acknowledgements
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his invaluable support and guidance.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
