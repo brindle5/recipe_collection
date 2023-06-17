@@ -37,14 +37,21 @@ Users can add new recipes by completing the form with details of the dish. They 
 ![Add recipe screenshot 1](documentation/add_recipe_screenshot_1.png)
 ![Add recipe screenshot 2](documentation/add_recipe_screenshot_2.png)
 
-- **Edit recipe **
+- **Edit recipe**
 The user can edit an existing recipe on this page. The relevant form fields are prepopulated with the recipe data so the user can change one or two small details without having to rewrite their recipe from scratch.
 
 ![Edit recipe screenshot 1](documentation/edit_recipe_screenshot_1.png)
 ![Edit recipe screenshot 2](documentation/edit_recipe_screenshot_2.png)
 
-
 ### Future features
+
+There are a number of features which could be added to expand on the site and give it further interactive features. This could include:
+•	The ability to like recipes.
+•	Commenting on recipes.
+•	Attaching photos to recipes to enhance UX.
+•	Sharing feature to enable recipes to be sent via social media or messaging services.
+•	The ability to add and remove friends.
+•	The ability to follow popular recipe builders. 
 
 ## Tools and technologies used
 

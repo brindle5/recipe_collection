@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-12">
             <a href="/add" class="btn btn-success">
-                Add new recipe
+                <strong>Add new recipe</strong>
             </a>
         </div>
     </div>
@@ -37,11 +37,11 @@
             <br>
             {% if request.user == recipe.author %}
             <a href="{% url 'edit' recipe.id %}" class="btn btn-warning">
-                Edit Recipe
+                <strong>Edit Recipe</strong>
             </a>
             <br>
             <a href="{% url 'delete' recipe.id %}" class="btn btn-danger">
-                Delete Recipe
+                <strong>Delete Recipe</strong>
             </a>
             {% endif %}
         </div>

@@ -25,23 +25,24 @@
     </div>
 
     <nav>
-        <ul>
-            {% if user.is_authenticated %}
-
-            <p>You are currently logged in as {{ user }}
-                <br>
-
+        {% if user.is_authenticated %}
+        <ul>   
+            <li>
+                You are currently logged in as {{ user }}.
+        <br>
+            </li>             
+            <li>
                 <a href="{% url 'account_logout' %}">Logout</a>
-
-                {% else %}
-                <li>
+            </li>
+            {% else %}
+            <li>
                     <a href="{% url 'account_login' %}">Login</a>
-                </li>
-                <li>
+            </li>
+            <li>
                     <a href="{% url 'account_signup' %}">Register</a>
-                </li>
-                {% endif %}
-        </ul>
+            </li>
+            {% endif %}
+      </ul>
     </nav>
 
     <div class="container">
