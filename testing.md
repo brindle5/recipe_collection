@@ -34,20 +34,36 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 **Firefox:** works as expected
 
-![]()
+![Edge homepage screenshot](documentation/firefox_screenshot_homepage.png)
 
-![]()
+![Edge add recipe screenshot](documentation/firefox_screenshot_addrecipe.png)
 
-![]()
+![Edge edit recipe screenshot](documentation/firefox_screenshot_editrecipe.png)
 
+**Safari:** 
 
 ## Responsiveness
 
-### Mobile
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+### Mobile phones (screens from 320px to 480px) 
+
+Some slight CSS changes
+
+![Mobile homepage screenshot](documentation/mobile_screenshot_homepage.png)
+
+![Mobile add recipe screenshot](documentation/mobile_screenshot_addrecipe.png)
+
+![Mobile edit recipe screenshot](documentation/mobile_screenshot_editrecipe.png)
 
 ### Tablet
 
-### Laptop
+### Laptop  (screens from 769px to 1024px): 
+
+Works as expected
+
+![]()
+
 
 ### Desktop
 
