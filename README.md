@@ -13,6 +13,8 @@ I used [coolors.co](https://coolors.co/546a7b-fdfffc-c1292e) to generate my colo
 
 ### Typography
 
+[Open Sans](https://fonts.google.com/specimen/Open+Sans) was used to style the text. I used font weight 800 for the recipe headings and font weight 400 for the main text body.
+
 ## User stories
 
 ### New Site Users
