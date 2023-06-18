@@ -62,7 +62,11 @@ Some slight CSS changes
 
 Works as expected
 
-![]()
+![Laptop homepage screenshot](documentation/laptop_screenshot_homepage.png)
+
+![Laptop add recipe screenshot](documentation/laptop_screenshot_addrecipe.png)
+
+![Laptop edit recipe screenshot](documentation/laptop_screenshot_editrecipe.png)
 
 
 ### Desktop
