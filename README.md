@@ -6,6 +6,11 @@
 
 ### Colour scheme
 
+I used #FDFFFC(Baby Powder) as my background colour and #546A7B(Payne’s Gray) as my font colour. I also used #C1292E(Fire engine red) as a highlight for each recipe title.
+I used [coolors.co](https://coolors.co/546a7b-fdfffc-c1292e) to generate my colour palette.
+
+![Coolers colour scheme](documentation/coolers_colour_scheme.png)
+
 ### Typography
 
 ## User stories

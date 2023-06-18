@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
 
-/* Code for margin, padding and border originally from Code Institute
-
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-} */
-
+/* General body styling */
 
 html,
 body {
@@ -21,10 +14,14 @@ body {
     font-family: 'Open Sans', 'Verdana', sans-serif;
 }
 
+/* Styling for heading */
+
 #heading {
     font-weight: 800;
     font-size: 5rem;
 }
+
+/* Styling for text */
 
 .highlight {
     color: #C1292E;
