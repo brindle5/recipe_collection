@@ -36,7 +36,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = ['8000-brindle5-recipe-collecti-wx491azm6d.us2.codeanyapp.com',
-                 'localhost', 'the-kitchen.herokuapp.com']
+                 'localhost', 
+                 'the-kitchen.herokuapp.com', 
+                 '8000-brindle5-recipecollecti-t2ibwf50tjk.ws-eu100.gitpod.io']
 
 
 # Application definition
