@@ -14,6 +14,33 @@ Return back to the [README.md](README.md) file.
 
 ## Browser Compatibility
 
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+**Chrome:** works as expected
+
+![Chrome homepage screenshot](documentation/chrome_screenshot_homepage.png)
+
+![Chrome add recipe screenshot](documentation/chrome_screenshot_addrecipe.png)
+
+![Chrome edit recipe screenshot](documentation/chrome_screenshot_editrecipe.png)
+
+**Edge:** works as expected
+
+![Edge homepage screenshot](documentation/edge_screenshot_homepage.png)
+
+![Edge add recipe screenshot](documentation/edge_screenshot_addrecipe.png)
+
+![Edge edit recipe screenshot](documentation/edge_screenshot_editrecipe.png)
+
+**Firefox:** works as expected
+
+![]()
+
+![]()
+
+![]()
+
+
 ## Responsiveness
 
 ### Mobile
@@ -54,7 +81,7 @@ As a site user, I can upload my recipes so that I can keep a permanent record of
 
 As a site user, I can register an account so that I can store my recipes in my online recipe book.
 
-![Registration page screenshot]()
+![Registration page screenshot](documentation/registration_page.png)
 
 As a site user, I can edit and delete recipes so that I can keep my recipes organised.
 
@@ -64,9 +91,7 @@ As a site user, I can edit and delete recipes so that I can keep my recipes orga
 
 As a site administrator, I can manage recipes so that the site is well organised.
 
-![Admin page screenshot]()
-
-
+![Admin page screenshot](documentation/admin_page.png)
 
 ## Automated Testing
 
