@@ -12,8 +12,10 @@
 
 ### New Site Users
 
-As a site user, I can upload my recipe so that I can keep a permanent record of them.
+As a site user, I can upload my recipes so that I can keep a permanent record of them.
+
 As a site user, I can register an account so that I can store my recipes in my online recipe book.
+
 As a site user, I can edit and delete recipes so that I can keep my recipes organised.
 
 ### Site Admin

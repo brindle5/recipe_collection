@@ -44,6 +44,30 @@ I tested my deployed project using the Lighthouse tool and found there are no ma
 
 ## User Story Testing
 
+All of my site's features fulfil the needs set out in my user stories:
+
+As a site user, I can upload my recipes so that I can keep a permanent record of them.
+
+![Add recipe screenshot 1](documentation/add_recipe_screenshot_1.png)
+
+![Add recipe screenshot 2](documentation/add_recipe_screenshot_2.png)
+
+As a site user, I can register an account so that I can store my recipes in my online recipe book.
+
+![Registration page screenshot]()
+
+As a site user, I can edit and delete recipes so that I can keep my recipes organised.
+
+![Edit recipe screenshot 1](documentation/edit_recipe_screenshot_1.png)
+
+![Edit recipe screenshot 2](documentation/edit_recipe_screenshot_2.png)
+
+As a site administrator, I can manage recipes so that the site is well organised.
+
+![Admin page screenshot]()
+
+
+
 ## Automated Testing
 
 ## Bugs
