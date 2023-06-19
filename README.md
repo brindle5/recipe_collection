@@ -99,7 +99,30 @@ I also used [GitHub Issues](https://github.com/brindle5/recipe_collection/issues
 
 ### MoSCoW Prioritisation
 
+ I applied MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have:** guaranteed to be delivered:
+
+•	As a site user, I can upload my recipe so that I can keep a permanent record of them.
+•	As a site user, I can edit and delete recipes so that I can keep my recipes organised.
+•	As a site user, I can register an account so that I can store my recipes in my online recipe book.
+
+- **Should Have:** adds significant value, but not vital 
+
+•	As a site administrator, I can manage recipes so that the site is well organised.
+•	As a site user, I can upload pictures of my recipes so that I can provide a visual accompaniment to my content (During the development process, the MoSCoW labelling of this User Story was downgraded to ‘Won’t have’. It will be included in a future iteration)
+
+- **Could Have:** has small impact if left out 
+
+There were no user stories placed in this category
+
+- **Won't Have:** not a priority for this iteration
+
+As a site user, I can upload pictures of my recipes so that I can provide a visual accompaniment to my content.(Downgraded from ‘Should have.’)
+
 ## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment 
 
