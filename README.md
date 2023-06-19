@@ -64,6 +64,21 @@ There are a number of features which could be added to expand on the site and gi
 
 ## Tools and technologies used
 
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [JavaScript](https://www.javascript.com) used for notifications.
+- [Python](https://www.python.org) used as the back-end programming language.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [Django](https://www.djangoproject.com) used as the Python framework for the site.
+- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/) used to provide registration functionality.
+- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
+- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
+- [Cloudinary](https://cloudinary.com) used for online static file storage.
+- [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/) used for serving static files.
+
+
 ## Database design
 
 ## Agile development process
