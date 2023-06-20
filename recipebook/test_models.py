@@ -1,7 +1,9 @@
-# from django.test import TestCase
+from django.test import TestCase
+from .models import Cuisine, Meal, Recipe
 
-# # Create your tests here.
+class TestModels(TestCase):
 
-# class TestProject(TestCase):
-
-#     def
+    def test_cuisine_exists(self):
+        self.assertContains(Cuisine)
+        
+        

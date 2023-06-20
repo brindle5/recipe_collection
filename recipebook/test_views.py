@@ -2,8 +2,6 @@ from django.test import TestCase
 from . import views
 from .models import Cuisine, Meal, Recipe
 
-# Tests based on the Code Institute ToDo App project view tests
-
 class TestViews(TestCase):
 
     def get_homepage(self):
