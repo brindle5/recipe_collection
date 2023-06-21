@@ -48,7 +48,13 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ![Edge edit recipe screenshot](documentation/firefox_screenshot_editrecipe.png)
 
-**Safari:** 
+**Safari:**  works as expected
+
+![Safari homepage screenshot](documentation/safari_screenshot_homepage.png)
+
+![Safari add recipe screenshot](documentation/safari_screenshot_addrecipe.png)
+
+![Safari edit recipe screenshot](documentation/safari_screenshot_editrecipe.png)
 
 ## Responsiveness
 
@@ -64,7 +70,15 @@ Some slight CSS changes
 
 ![Mobile edit recipe screenshot](documentation/mobile_screenshot_editrecipe.png)
 
-### Tablet
+### Tablet (screens from 481px to 768px)
+
+Works as expected
+
+![Tablet homepage screenshot](documentation/tablet_screenshot_homepage.png)
+
+![Tablet add recipe screenshot](documentation/tablet_screenshot_addrecipe.png)
+
+![Tablet edit recipe screenshot](documentation/tablet_screenshot_editrecipe.png)
 
 ### Laptop  (screens from 769px to 1024px): 
 
