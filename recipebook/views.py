@@ -18,6 +18,7 @@ def add_recipe(request):
     if request.method == "POST":
         form = RecipeForm(request.POST)
         if form.is_valid():
+            form.instance.author = request.user
             form.save()
             messages.success(request, 'Recipe has been added to recipebook')
             return redirect("recipe")
@@ -34,6 +35,7 @@ def edit_recipe(request, recipe_id):
     if request.method == "POST":
         form = RecipeForm(request.POST, instance=recipe)
         if form.is_valid():
+            form.instance.author = request.user
             form.save()
             messages.success(request, 'Your recipe has been updated')
             return redirect("recipe")
