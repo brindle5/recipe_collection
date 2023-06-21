@@ -8,7 +8,15 @@ Return back to the [README.md](README.md) file.
 
 ### CSS
 
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS file which passes with no errors. The report can be found [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fthe-kitchen.herokuapp.com).
+
+![CSS validation screenshot](documentation/ccs_validation_screenshot.png)
+
 ### JavaScript
+
+I have used the recommended [JShint Validator](https://jshint.com) to validate the small amount of JavaScript code I’ve used.
+
+
 
 ### Python
 
