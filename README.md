@@ -81,6 +81,11 @@ There are a number of features which could be added to expand on the site and gi
 
 ## Database design
 
+Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
+Understanding the relationships between different tables can save time later in the project. I used [draw.io](https://app.diagrams.net/) to make my ERD.
+
+
+
 ## Agile development process
 
 ### Github projects
