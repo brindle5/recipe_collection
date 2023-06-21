@@ -271,7 +271,17 @@ You can fork this repository by using the following steps:
 
 ### Content
 
-### Media
+•	My ‘add_recipe’, ‘edit_recipe’, and ‘delete_recipe’ views, and my form are based on code from the Code Institute Todo App Walkthrough Project. I used these guides for reference:
+
+[How to create an item](https://docs.google.com/document/d/1P5Mzkvzm3HUMrMgABn1KwU_pHnR5n4TUX8rHKB-9CMA/edit)
+
+[How to modify data](https://docs.google.com/document/d/1RNDHMuQEBJ8if9XYR1WLjNJx_Z4Nad-NarjRVFrC0gQ/edit)
+
+•	The JavaScript code to notify users of their registration, login or logout status is from Code Institute’s [‘I Think, Therefore I Blog’ Project](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/11_messages/templates/base.html), as well as django’s [allauth package]( https://django-allauth.readthedocs.io/en/latest/)
+
+•	The notifications of a user’s successful deletion, editing or addition of a recipe to their recipe book is based on the blog post ['How to use Django Messages Framework'](https://ordinarycoders.com/blog/article/django-messages-framework?utm_content=cmp-true) from ordinarycoders.com.
+
+•	I used Tim Nelson’s Markdown Builder to generate the [readme and testing documentation](https://traveltimn.github.io/markdown-builder). 
 
 ### Acknowledgements
 
