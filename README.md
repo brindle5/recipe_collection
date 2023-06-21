@@ -84,7 +84,7 @@ There are a number of features which could be added to expand on the site and gi
 Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
 Understanding the relationships between different tables can save time later in the project. I used [draw.io](https://app.diagrams.net/) to make my ERD.
 
-
+![ERD diagram](documentation/erd.png)
 
 ## Agile development process
 
