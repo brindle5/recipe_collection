@@ -16,7 +16,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate the small amount of JavaScript code I’ve used.
 
-
+![JavaScript validation screenshot](documentation/js_validation_screenshot.png)
 
 ### Python
 
