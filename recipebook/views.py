@@ -54,5 +54,5 @@ def delete_recipe(request, recipe_id):
     return redirect("recipe")
     messages.error(request, 'Recipe not deleted. Try again later.')
 
-def return_home(request):
-    return redirect('recipe')
+# def return_home(request):
+    # return redirect(request, "recipe")
