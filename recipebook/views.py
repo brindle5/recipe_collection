@@ -11,7 +11,7 @@ class RecipeCollection(generic.ListView):
     template_name = 'index.html'
     model = Recipe
 
-#  Views for adding, editing and deleting recipes taken from the Code Institute ToDo App project
+#  Views for adding, editing and deleting recipes taken from the Code Institute ToDo App project  # noqa
 
 
 def add_recipe(request):
@@ -53,4 +53,3 @@ def delete_recipe(request, recipe_id):
     messages.success(request, 'Recipe deleted')
     return redirect("recipe")
     messages.error(request, 'Recipe not deleted. Try again later.')
-
