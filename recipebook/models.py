@@ -4,7 +4,7 @@ from cloudinary.models import CloudinaryField
 
 
 class Cuisine(models.Model):
-    """ A model for adding cuisine types (british, american, irish, chinese, indian, etc.) """
+    """ A model for adding cuisine types (british, american, irish, chinese, indian, etc.) """  # noqa
     name = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):
