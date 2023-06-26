@@ -10,6 +10,7 @@ from django.contrib import messages
 class RecipeCollection(generic.ListView):
     template_name = 'index.html'
     model = Recipe
+    ordering = ['id']
 
 #  Views for adding, editing and deleting recipes taken from the Code Institute ToDo App project  # noqa
 
