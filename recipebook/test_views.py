@@ -2,6 +2,7 @@ from django.test import TestCase
 from . import views
 from .models import Cuisine, Meal, Recipe
 
+
 class TestViews(TestCase):
 
     def test_get_homepage(self):
@@ -12,7 +13,4 @@ class TestViews(TestCase):
     def test_get_add_recipe_page(self):
         response = self.client.get('/add')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'add_recipe.html')
-    
-
-    
+        self.assertTemplateUsed(response, 'add_recipe.html')   
