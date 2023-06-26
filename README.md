@@ -272,6 +272,8 @@ You can fork this repository by using the following steps:
 
 ### Local vs Deployment
 
+I haven't found any differences in performance between the local and deployed sites.
+
 ## Credits
 
 ### Content
