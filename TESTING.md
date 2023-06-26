@@ -239,5 +239,12 @@ As a site administrator, I can manage recipes so that the site is well organised
 
 ## Automated Testing
 
+I have conducted a series of automated tests on my application.
+I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
+
+### Python (Unit Testing)
+
+
+
 ## Bugs
 
