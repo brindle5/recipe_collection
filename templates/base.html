@@ -34,14 +34,14 @@
 
     <!-- Code for registration status -->
 
-    <div class="container">
+    <nav class="container">        
         
-        {% if user.is_authenticated %}
-        <ul>   
+        <ul> 
+            {% if user.is_authenticated %}  
             <li>
                 You are currently logged in as {{ user }}.
-            </li> 
-            <br>                        
+                <br>  
+            </li>                                   
             <li>
                 <a href="{% url 'account_logout' %}">Logout</a>
             </li>
@@ -55,7 +55,7 @@
             {% endif %}
       </ul>
     
-    </div>
+    </nav>
 
     <!-- Code for notifications -->
 
