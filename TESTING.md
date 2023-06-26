@@ -6,6 +6,20 @@ Return back to the [README.md](README.md) file.
 
 ### HTML
 
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+[Homepage](https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fthe-kitchen.herokuapp.com%2F) | No errors
+
+![Homepage html validation screenshot](documentation/homepage_html_validation_screenshot.png)
+
+[Add Recipe Page]( https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fthe-kitchen.herokuapp.com%2Fadd) | No errors
+
+![Add recipe html validation screenshot](documentation/add_recipe_html_validation_screenshot.png)
+
+[Edit Recipe Page](https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fthe-kitchen.herokuapp.com%2Fedit%2F1) | No errors
+
+![Edit recipe html validation screenshot](documentation/edit_recipe_html_validation_screenshot.png)
+
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS file which passes with no errors. The report can be found [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fthe-kitchen.herokuapp.com).
