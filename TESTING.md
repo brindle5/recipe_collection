@@ -248,4 +248,15 @@ I fully acknowledge and understand that, in a real-world scenario, an extensive 
 
 ## Bugs
 
+### Fixed Bugs
+
 When viewed on a device narrower than 385px, the ‘Add new recipe’ and ‘Edit recipe’ pages had a slight overflow on their x-axis.
+
+![Add recipe page scroll bug screenshot](documentation/add_recipe_scroll_bug.png)
+
+![Edit recipe page scroll bug screenshot](documentation/edit_recipe_scroll_bug.png)
+
+To fix this, I added ‘overflow-x: hidden’ to the body section of my css file.
+
+
+There are no remaining bugs that I am aware of.
