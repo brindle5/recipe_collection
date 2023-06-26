@@ -143,6 +143,62 @@ I tested my deployed project using the Lighthouse tool and found there are no ma
 
 ## Defensive Programming
 
+Defensive programming was manually tested with the below user acceptance testing:
+
+User Action - Expected Result - Pass/Fail 
+
+**Home Page (Before login/registration)**
+
+- Click on login – Redirect to ‘sign in’ page - Pass
+- Click on register – Redirect to ‘register page’ – Pass
+
+**Login page**
+
+- Username – User is prompted to complete username field - Pass
+ - Password - User is prompted to complete password field - Pass
+ - User clicks ‘Sign In’ – Redirect to homepage with notification of success - Pass
+
+**Register page**
+
+- Username - User is prompted to enter a username – Pass
+- Email address – User is prompted to enter a valid email address – Pass
+- Password – User is prompted to enter a password – Pass
+- Password (again) – User is prompted to enter their password a second time – Pass
+- Click ‘Sign up’ – Redirect to homepage with notification of successful registration - Pass
+
+**Home page (After login/registration)**
+
+- Click on ‘Logout’ - Redirect to ‘Sign Out’ page – Pass (user asked to confirm sign out)
+- Click on ‘Add new recipe’ - Redirect to ‘Add Recipe’ page – Pass
+- Click on ‘Edit Recipe’ - Redirect to ‘Edit Recipe’ page – Pass
+- Click on ‘Delete Recipe' – Recipe deleted from database with notification of success – Pass
+
+**Logout page**
+
+- Click on ‘Sign Out’ – Redirect to homepage with notification of success – Pass
+
+**Add New Recipe page**
+
+- Title field – User is prompted to complete title field – Pass
+- Description field – User can complete or leave blank - Pass
+- Ingredients field – User is prompted to complete ingredients field -  Pass
+- Instructions field – User is prompted to complete instructions field – Pass
+- Select cuisine from list – User can choose from dropdown list, or leave blank - Pass
+- Select meal from list - User can choose from dropdown list, or leave blank - Pass
+- Click on ‘Finished’ – Redirect to homepage with notification of success - Pass
+- Click on ‘Return Home’ – Redirect to home page with no changes – Pass
+
+**Edit recipe page**
+
+- Title field- User can change title, or leave as is - Pass
+- Description field – User can add or change description, or leave as is - Pass
+- Ingredients field – User can change ingredients, or leave as is - Pass
+- Instructions field - User can change instructions, or leave as is – Pass
+- Cuisine field – User can change or select cuisine type – Pass
+- Meal type - User can change or select meal type - Pass
+- Click on ‘Finished’ - Redirect to home page with notification of success - Pass
+- Click on ‘Return Home’ - Redirect to home page with no changes - Pass
+
 ## User Story Testing
 
 All of my site's features fulfil the needs set out in my user stories:
