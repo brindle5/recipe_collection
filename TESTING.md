@@ -248,3 +248,4 @@ I fully acknowledge and understand that, in a real-world scenario, an extensive 
 
 ## Bugs
 
+When viewed on a device narrower than 385px, the ‘Add new recipe’ and ‘Edit recipe’ pages had a slight overflow on their x-axis.
