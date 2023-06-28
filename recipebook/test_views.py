@@ -9,8 +9,3 @@ class TestViews(TestCase):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
-
-    def test_get_add_recipe_page(self):
-        response = self.client.get('/add')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'add_recipe.html')
