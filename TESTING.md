@@ -136,9 +136,6 @@ Works as expected
 
 ![Laptop edit recipe screenshot](documentation/laptop_screenshot_editrecipe.png)
 
-
-### Desktop
-
 ## Lighthouse Audit
 
 I tested my deployed project using the Lighthouse tool and found there are no major issues.
