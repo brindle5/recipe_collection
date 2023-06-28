@@ -249,6 +249,16 @@ I fully acknowledge and understand that, in a real-world scenario, an extensive 
 
 ### Python (Unit Testing)
 
+I have used Django's built-in unit testing framework to test the application functionality.
+In order to run the tests, I ran the following commands in the terminal: `python3 manage.py test recipebook.test_forms` and `python3 manage.py test recipebook.test_forms`.
+
+Forms.py | All tests passed
+
+![Automated form testing screenshot](documentation/test_forms_testing_screenshot.png)
+
+Views.py | Test passed
+
+![Automated views testing screenshot](documentation/test_views_testing_screenshot.png)
 
 
 ## Bugs
