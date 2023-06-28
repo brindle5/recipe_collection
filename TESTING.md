@@ -260,7 +260,6 @@ Views.py | Test passed
 
 ![Automated views testing screenshot](documentation/test_views_testing_screenshot.png)
 
-
 ## Bugs
 
 ### Fixed Bugs
