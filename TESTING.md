@@ -34,7 +34,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate t
 
 ### Python
 
-I ran my python code through the Code Institute Python Linter.
+I ran my python code through the [Code Institute Python Linter](https://pep8ci.herokuapp.com/).
 
 **Recipe book folder**
 
@@ -46,6 +46,14 @@ I ran my python code through the Code Institute Python Linter.
 
 
 ![Python models.py linter screenshot](documentation/python_model_linter_screenshot.png)
+
+•	[Test_forms.py]( https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/brindle5/recipe_collection/main/recipebook/test_forms.py)
+
+![Test_forms.py linter screenshot](documentation/python_test_forms_linter_screenshot.png)
+
+•	[Test_views.py]( https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/brindle5/recipe_collection/main/recipebook/test_views.py)
+
+![Test_views.py linter screenshot](documentation/python_test_views_linter_screenshot.png)
 
 •	[Urls.py]( https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/brindle5/recipe_collection/main/recipebook/urls.py) | No errors
 
