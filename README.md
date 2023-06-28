@@ -50,6 +50,18 @@ I used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
 ### Tablet Wireframes
 
+#### Homepage
+
+![Tablet homepage wireframe]()
+
+#### Add recipe page
+
+![Tablet add recipe wireframe]()
+
+#### Edit recipe page
+
+![Tablet edit recipe wireframe]()
+
 ### Laptop Wireframes
 
 #### Homepage
