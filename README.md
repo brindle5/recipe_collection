@@ -52,15 +52,15 @@ I used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
 #### Homepage
 
-![Tablet homepage wireframe]()
+![Tablet homepage wireframe](documentation/tablet_homepage_wireframe.png)
 
 #### Add recipe page
 
-![Tablet add recipe wireframe]()
+![Tablet add recipe wireframe](documentation/tablet_add_recipe_wireframe.png)
 
 #### Edit recipe page
 
-![Tablet edit recipe wireframe]()
+![Tablet edit recipe wireframe](documentation/tablet_edit_recipe_wireframe.png)
 
 ### Laptop Wireframes
 
@@ -100,12 +100,12 @@ The user can edit an existing recipe on this page. The relevant form fields are 
 ### Future features
 
 There are a number of features which could be added to expand on the site and give it further interactive features. This could include:
-•	The ability to like recipes.
-•	Commenting on recipes.
-•	Attaching photos to recipes to enhance UX.
-•	Sharing feature to enable recipes to be sent via social media or messaging services.
-•	The ability to add and remove friends.
-•	The ability to follow popular recipe builders. 
+- The ability to like recipes.
+-	Commenting on recipes.
+-	Attaching photos to recipes to enhance UX.
+-	Sharing feature to enable recipes to be sent via social media or messaging services.
+-	The ability to add and remove friends.
+-	The ability to follow popular recipe builders. 
 
 ## Tools and technologies used
 
@@ -329,7 +329,7 @@ I haven't found any differences in performance between the local and deployed si
 
 [How to modify data](https://docs.google.com/document/d/1RNDHMuQEBJ8if9XYR1WLjNJx_Z4Nad-NarjRVFrC0gQ/edit)
 
-•	The JavaScript code to notify users of their registration, login or logout status is from Code Institute’s [‘I Think, Therefore I Blog’ Project](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/11_messages/templates/base.html), as well as django’s [allauth package]( https://django-allauth.readthedocs.io/en/latest/)
+•	The JavaScript code to notify users of their registration, login or logout status is from Code Institute’s [‘I Think, Therefore I Blog’ Project](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/11_messages/templates/base.html), as well as django’s [allauth package]( https://django-allauth.readthedocs.io/en/latest/).
 
 •	The notifications of a user’s successful deletion, editing or addition of a recipe to their recipe book is based on the blog post ['How to use Django Messages Framework'](https://ordinarycoders.com/blog/article/django-messages-framework?utm_content=cmp-true) from ordinarycoders.com.
 
