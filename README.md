@@ -1,6 +1,6 @@
 # The Kitchen
 
-‘The Kitchen’ is a site where lovers of food and cooking can upload recipes to their online Recipe Book. They can categorise their recipes by cuisine and meal type.
+‘The Kitchen’ is a site where lovers of food and cooking can upload recipes to their online Recipe Book. They can categorise their recipes by cuisine and meal type. They can also read other peoples' recipes which are stored on the homepage.
 
 ## UX
 
@@ -30,6 +30,27 @@ As a site user, I can edit and delete recipes so that I can keep my recipes orga
 As a site administrator, I can manage recipes so that the site is well organised.
 
 ## Wireframes
+
+To follow best practice, I developed wireframes for mobile, tablet, and laptop sizes.
+I used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+
+### Mobile Wireframes
+
+### Tablet Wireframes
+
+### Laptop Wireframes
+
+#### Homepage
+
+![Laptop homepage wireframe](documentation/laptop_homepage_wireframe.png)
+
+#### Add recipe page
+
+![Laptop add recipe wireframe](documentation/laptop_add_recipe_wireframe.png)
+
+#### Edit recipe page 
+
+![Laptop edit recipe wireframe](documentation/laptop_edit_recipe_wireframe.png)
 
 ## Features
 
