@@ -271,7 +271,10 @@ When viewed on a device narrower than 385px, the ‘Add new recipe’ and ‘Edi
 
 ![Edit recipe page scroll bug screenshot](documentation/edit_recipe_scroll_bug.png)
 
-To fix this, I added ‘overflow-x: hidden’ to the body section of my css file.
+To fix this, I added ‘overflow-x: hidden’ and 'width: 100%' to the body section of my css file.
 
+![Add recipe scroll bug fixed](documentation/fixed_add_recipe_scroll_bug.png)
+
+![Add recipe scroll bug fixed](documentation/fixed_edit_recipe_scroll_bug.png)
 
 There are no remaining bugs that I am aware of.
