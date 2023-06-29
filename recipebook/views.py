@@ -5,6 +5,7 @@ from django.views import generic, View
 from .forms import RecipeForm
 from django.urls import reverse
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
 class RecipeCollection(generic.ListView):
@@ -15,6 +16,7 @@ class RecipeCollection(generic.ListView):
 #  Views for adding, editing and deleting recipes taken from the Code Institute ToDo App project  # noqa
 
 
+@login_required
 def add_recipe(request):
     if request.method == "POST":
         form = RecipeForm(request.POST)
@@ -31,8 +33,12 @@ def add_recipe(request):
     return render(request, 'add_recipe.html', context)
 
 
+@login_required
 def edit_recipe(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
+    if recipe.author != request.user:
+        messages.error(request, "Access denied to edit this recipe.")
+        return redirect("recipe")
     if request.method == "POST":
         form = RecipeForm(request.POST, instance=recipe)
         if form.is_valid():
@@ -40,6 +46,7 @@ def edit_recipe(request, recipe_id):
             form.save()
             messages.success(request, 'Your recipe has been updated')
             return redirect("recipe")
+        else:
             messages.error(request, 'There was a problem. Try again later.')
     form = RecipeForm(instance=recipe)
     context = {
@@ -48,9 +55,12 @@ def edit_recipe(request, recipe_id):
     return render(request, 'edit_recipe.html', context)
 
 
+@login_required
 def delete_recipe(request, recipe_id):
     recipe = get_object_or_404(Recipe, id=recipe_id)
+    if recipe.author != request.user:
+        messages.error(request, "Access denied to edit this recipe.")
+        return redirect("recipe")
     recipe.delete()
     messages.success(request, 'Recipe deleted')
     return redirect("recipe")
-    messages.error(request, 'Recipe not deleted. Try again later.')
