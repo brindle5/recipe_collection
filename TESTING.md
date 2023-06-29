@@ -44,14 +44,13 @@ I ran my python code through the [Code Institute Python Linter](https://pep8ci.h
 
 •	[Models.py]( https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/brindle5/recipe_collection/main/recipebook/models.py) | No errors
 
-
 ![Python models.py linter screenshot](documentation/python_model_linter_screenshot.png)
 
-•	[Test_forms.py]( https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/brindle5/recipe_collection/main/recipebook/test_forms.py)
+•	[Test_forms.py](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/brindle5/recipe_collection/main/recipebook/test_forms.py) | No errors
 
-![Test_forms.py linter screenshot](documentation/python_test_forms_linter_screenshot.png)
+![Test_forms.py linter screenshot](documentation/python_test_forms_linter_screenshot.png) | No errors
 
-•	[Test_views.py]( https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/brindle5/recipe_collection/main/recipebook/test_views.py)
+•	[Test_views.py]( https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/brindle5/recipe_collection/main/recipebook/test_views.py) | No errors
 
 ![Test_views.py linter screenshot](documentation/python_test_views_linter_screenshot.png)
 
@@ -70,7 +69,6 @@ I ran my python code through the [Code Institute Python Linter](https://pep8ci.h
 ![Python settings.py linter screenshot](documentation/python_settings_linter_screenshot.png)
 
 •	[Urls.py](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/brindle5/recipe_collection/main/thekitchen/urls.py) | No errors
-
 
 ![Python kitchen urls linter screenshot](documentation/python_kitchenurls_linter_screenshot.png)
 
